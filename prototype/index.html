@@ -1,11 +1,15 @@
 <!-- First Assignment -->
- <!doctype HTML5>
+<!DOCTYPE html>
  <html lang="en">
     <head>
+        <!--the title of the website that a user would see when searching-->
         <title>Dhruv Bhale</title>
-        <meta name="author" content="Dhruv Bhale" />
-        <meta charset="utf-8" />
-        <meta name="description" content="Assignment 1" />
+        <!--this gives the name of the author that is "Dhruv Bhale"-->
+        <meta name="author" content="Dhruv Bhale">
+        <!--This is Character encoding which  tells the web browser which character set to use.-->
+        <meta charset="utf-8">
+        <!-- along with the title, a webpage needs a description that tells the user what the webpage is about-->
+        <meta name="description" content="Assignment 1">
     </head>
 
     <body>
@@ -14,13 +18,20 @@
                 <h1 id="top">University of Arkansas at Little Rock: A Brief History </h1>
             </header>
             <section id="content">
-                <p><em>The University of Arkansas at Little Rock (UA Little Rock)</em> is a public research university in Little Rock, Arkansas. Established as Little Rock Junior College by the Little Rock School District in 1927, the institution became a private four-year university under the name Little Rock University in 1957. It returned to public status in 1969 when it merged with the University of Arkansas System under its present name. The former campus of Little Rock Junior College is now (2019) the campus of Philander Smith University.</p>
+                <!--<em> and <strong>-->
+                <p><em><strong>The University of Arkansas at Little Rock (UA Little Rock)</strong></em> is a public research university in Little Rock, Arkansas. Established as Little Rock Junior College by the Little Rock School District in 1927, the institution became a private four-year university under the name Little Rock University in 1957. It returned to public status in 1969 when it merged with the University of Arkansas System under its present name. The former campus of Little Rock Junior College is now (2019) the campus of Philander Smith University.</p>
                 <p>At 250 acres (100 ha), the UA Little Rock campus encompasses more than 56 buildings, including the Center for Nanotechnology Integrative Sciences, the Emerging Analytics Center, the Sequoyah Research Center, and the Ottenheimer Library Additionally, UA Little Rock houses special learning facilities that include a learning resource center, art galleries, KUAR public radio station, University Television, and a campus-wide wireless network. It is classified among "R2: Doctoral Universities – High research activity".</p>
-
-                <img src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt="UA Little Rock" />
-
+                <!--image-->
+                <img src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt="UA Little Rock">
+                <!--a quote about education, Examples of both an inline and block level-->
+                <blockquote>
+                    <p><q>Education is the most powerful weapon which you can use to change the world.</q></p>
+                    <cite>- Nelson Mandela</cite>
+                </blockquote>
+                <div id="academics">
                 <h2>Academics</h2>
                 <p>The university features more than 100 undergraduate degrees and 60 graduate degrees, including graduate certificates, master's degrees, and doctorates, through both traditional and online courses. Students attend classes in one of the university's three new colleges and a law school.</p>
+                <!-- A definition list within an unordered list --> 
                 <ul>
                     <li>
                         
@@ -40,7 +51,7 @@
                        
                         <dl>
                             <dt>CSTEM</dt>
-                            <dd>At UA Little Rock, <strong>the Donaghey College of Science, Technology, Engineering, and Mathematics</strong> educates, inspires, and prepares undergraduates and graduate students for fulfilling internships and careers. Within the college, there are five departments and two schools which offer academic programs at all levels – minors, undergraduate certificates and degrees, master’s certificates and degrees, and doctoral.</dd>
+                            <dd><strong>The Donaghey College of Science, Technology, Engineering, and Mathematics</strong> educates, inspires, and prepares undergraduates and graduate students for fulfilling internships and careers. Within the college, there are five departments and two schools which offer academic programs at all levels – minors, undergraduate certificates and degrees, master’s certificates and degrees, and doctoral.</dd>
                         </dl>
                     </li>
                     <li>
@@ -51,6 +62,60 @@
                         </dl>
                     </li>
                 </ul>
+            </div><!--closing of academics-->
+                <div id="statsticks">
+                <!-- I made up data for this table -->
+                <table border="1">
+                    <caption><strong>University Statistics</strong></caption>
+                      <thead>
+                          <tr>
+                              <th scope="col">Category</th>
+                              <th scope="col">CBHHS</th>
+                              <th scope="col">CHASSE</th>
+                              <th scope="col">CSTEM</th>
+                              <th scope="col">WHB School of Law</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>Enrollment</td>
+                              <td>1000</td>
+                              <td>1000</td>
+                              <td>1000</td>
+                              <td>1000</td>
+                          </tr>
+                          <tr>
+                              <td>Faculty</td>
+                              <td>50</td>
+                              <td>60</td>
+                              <td>70</td>
+                              <td>80</td>
+                          </tr>
+                          <tr>
+                              <td>Programs</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>5</td>
+                              <td>7</td>
+                          </tr>
+                          <tr>
+                              <td>Research Funding</td>
+                              <td>$1M</td>
+                              <td>$2M</td>
+                              <td>$3M</td>
+                              <td>$4M</td>
+                          </tr>
+                          <tr>
+                              <td>Graduation Rate</td>
+                              <td>70%</td>
+                              <td>75%</td>
+                              <td>80%</td>
+                              <td>85%</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                </div><!--closing of statsticks-->
+                <div id="studentlife">
                 <h3>Student life</h3>
                 <p>Student body composition as of may 2, 2022</p>
                 <table border="1">
@@ -85,8 +150,11 @@
                     </tbody>
                 </table>
                 <p>The student life at UA Little Rock is typical of public universities in the United States. It is characterized by student-run organizations and affiliation groups that support social, academic, athletic, and religious activities and interests. Some of the services offered by the UA Little Rock Office of Campus Life are intramural sports and fitness programs, diversity programs, leadership development, peer tutoring, student government association, student support programs including groups for non-traditional and first-generation students, a student-run newspaper, and fraternity and sorority life. The proximity of the UA Little Rock campus to downtown Little Rock enables students to take advantage of a wide array of recreational, entertainment, educational, internship, and employment opportunities that are not available anywhere else in Arkansas.</p>
+
                 <h3>Campus living</h3>
                 <p>UA Little Rock provides a variety of on-campus living options for students ranging from traditional resident rooms to multiple-bedroom apartments. The university has four residence halls on the eastern side of the campus and the University Village Apartment Complex[21] on the southern side of campus. Six learning communities focusing on criminal justice, arts and culture, majors and careers, future business innovators, nursing careers, and STEM are available to students.</p>
+                </div><!--closing of studentlife-->
+                <div id="athelics">
                 <h4>Athletics</h4>
                 <p>UA Little Rock's 14 athletic teams are known as the Little Rock Trojans, with almost all teams participating in the Sun Belt Conference. Little Rock is one of two Sun Belt members that do not sponsor football (UT Arlington being the other); UA Little Rock last fielded a football team in 1955 when it was known as Little Rock Junior College. Little Rock's main athletic offices are located in the Jack Stephens Center. UA Little Rock offers the following sports:</p>
                 <ol>
@@ -102,6 +170,8 @@
                  </ol>
                  <p>Two Little Rock teams that do not compete in the Sun Belt are the women's swimming and diving team (Missouri Valley Conference) and wrestling (Pac-12 Conference), neither of which the Sun Belt sponsors. Wrestling is the school's newest sport, starting in 2019, and is the first Division I program in Arkansas.</p>
                  <p>Little Rock will move to the Ohio Valley Conference for the 2022-23 season.</p>
+                </div><!--closing of athelics-->
+                <div id="archives">
                  <h5>Collections and archives</h5>
                  <p>On July 1, 2014, the UA Little Rock Collections and Archives division was created. The division encompasses:</p>
                  <ul>
@@ -109,6 +179,7 @@
                     <li>Center for Arkansas History and Culture</li>
                     <li>Sequoyah National Research CenterSequoyah National Research Center</li>
                  </ul>
+                </div><!--closing of archives-->
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -120,7 +191,7 @@
                  
             </section>
             <footer>
-                <h6 id="footnote1">&copy; 2025 Dhruv Bhale | <a href="mailto:mail@ualr.edu" >Email</a> | <a href="#top">Back to Top</a></h6> </h6>
+                <h6>&copy; 2025 Dhruv Bhale | <a href="mailto:mail@ualr.edu" >Email</a> | <a href="#top">Back to Top</a></h6>
             </footer> 
 
         </main>
