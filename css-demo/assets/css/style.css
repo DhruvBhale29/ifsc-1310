@@ -1,4 +1,6 @@
 /*  CSS Demo Stylesheet  */
+
+/*  ---------------Box Sizing-----------------  */
 html {
     box-sizing: border-box;
   }
@@ -7,10 +9,17 @@ html {
   *:after {
     box-sizing: inherit;
   }
-/*  
+
+  /*  ---------------Utility Classes-----------------  */
+.container{
+  width: 80vw;
+  max-width: 960px;
+  margin: 40px auto;
+}
+  
 body {
-background-color:dodgerblue
-}*/
+
+}
 main{
 }
 
@@ -52,10 +61,52 @@ header.primary h2{
 nav.primary{}
 nav.primary ul{
   padding:0;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  max-width: 960px;
+  margin: 20px auto;
 }
 nav.primary ul li{
   list-style-type:none;
 }
 nav.primary ul li a{
   color:white;
+  font-size:.9rem;
+  text-decoration:none;
+  background:black;
+  border: 1px solid white;
+  padding: 5px 7.5px;
+  background-color:rgba(0,0,0,.4);
+  border-radius: 20px 4px ;/*topleft topright botmright botmleft*/
+  transition:.5s;
+}
+nav.primary ul li a:hover{
+  background-color:rgba(0,0,0,.7);
+}
+
+#content{}
+
+#content h2{
+  color: #C7685B;
+  border-bottom: 1px dotted black;
+}
+
+#content h3{
+  color: #C7685B;
+  border-left:7.5px solid #C7685B;
+  padding: 5px 0 5px 10px;
+}
+
+
+@media screen and (max-widthmax-width:500px){
+  nav.primary ul{
+    flex-direction:column;
+    gap: 10px;
+  }
+  
+  nav.primary ul li a{
+    display:block;
+  }
+
 }
