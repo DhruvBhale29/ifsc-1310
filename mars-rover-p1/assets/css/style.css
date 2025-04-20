@@ -12,6 +12,11 @@ Asked GPT for color scheme
 
 /* ---------- Global Styles ---------- */
 
+
+html {
+  scroll-behavior: smooth; /* so when you tap on "back to top" link, instead of teleporting to the top, it gives scroll transition */
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
