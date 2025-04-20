@@ -1,10 +1,12 @@
-/* Mars Rover Theme Colors
+/* Mars Rover Color scheme
 #0b0c10 - Dark Background
 #101820 - Header/Footer Background (rgba version used)
 #d62f2f - Mars Red Accent
 #ffffff - White Text
 #d1d1d1 - Light Gray Text
 #e0e0e0 - Light Gray Headings
+
+Asked GPT for color scheme
 */
 
 
@@ -12,15 +14,14 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: #ffffff;
     background-color: #0b0c10;
     background-color: #000000;
-    background-image: url(../img/background2.jpg);
+    background-image: url(../img/background3.jpg); /* taken from https://unsplash.com/s/photos/space-wallpaper */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    color: #ffffff;
-    line-height: 1.6;
-    padding: 16px;
+    
   }
   
   /* ---------- Header ---------- */
@@ -106,14 +107,15 @@ body {
     margin-bottom: 32px;
   }
   
-  /* ---------- FAQ Specific Styles ---------- */
+/* ---------- FAQ Specific Styles ---------- */
+
 .faq-page h3 {
-  /* Give FAQ questions a Mars orange color */
   color: #E94E1B;
   font-weight: bold;
 }
 
 /* Add spacing between grouped sections in FAQ */
+
 .faq-group {
   margin-bottom: 40px;
 }
