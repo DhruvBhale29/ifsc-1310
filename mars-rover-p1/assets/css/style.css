@@ -19,7 +19,7 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    /*color: #ffffff;*/
+    color: #ffffff;
     background-color: #0b0c10;
     background-image: url(../img/background3.jpg); /* taken from https://unsplash.com/s/photos/space-wallpaper */
     background-size: cover;
