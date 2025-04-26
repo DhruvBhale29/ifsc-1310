@@ -1,12 +1,16 @@
-/* Mars Rover Color scheme
-#0b0c10 - Dark Background
-#101820 - Header/Footer Background (rgba version used)
-#d62f2f - Mars Red Accent
-#ffffff - White Text
-#d1d1d1 - Light Gray Text
-#e0e0e0 - Light Gray Headings
+/* Mars Rover Color Scheme
 
-Asked GPT for color scheme
+   Asked GPT for color scheme
+
+   #0b0c10 - Dark Background (Used for body background color)
+   #101820 - Header/Footer Background (Used for header and footer background)
+   #d62f2f - Mars Red Accent (Used for header border, captions, and link colors)
+   #ffffff - White Text (Used for white text across the site)
+   #d1d1d1 - Light Gray Text (Used for light gray text, such as in the tagline)
+   #e0e0e0 - Light Gray Headings (Used for light gray headings, such as h3 tags)
+   #7a3b3b - Mars Dust (Earthy Red) (Used for even rows in the rover table)
+   #5c1e1e - Martian Terrain(Darker Red-Brown)(Used for odd rows in rover table)
+
 */
 
 
@@ -31,13 +35,13 @@ body {
 /* ---------- Header ---------- */
 
 header {
-  background-image: url('../img/mars2.jpg'); 
+  background-image: url('../img/mars10.png'); 
   background-size: cover;                    
   background-position: center;               
   background-repeat: no-repeat;              
-  padding: 96px 32px; 
+  padding: 160px 32px 80px 32px; /* made header bigger */
   text-align: center;
-  border-bottom: 3px solid #d62f2f;
+  border: 2px solid #d62f2f;
 }
 
 header h1 {
@@ -63,6 +67,23 @@ nav ul {
 
 nav ul li {
   margin: 0 16px;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d62f2f;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+nav ul li a:hover{
+  transform: scale(1.08); /* learnt online, gives a pop out effect */
+  opacity: 3;
+  text-decoration: none;
 }
 
 
@@ -92,7 +113,7 @@ main {
 }
 
 section {
-  margin-bottom: 32px;
+  margin-bottom: 35px;
 }
 
 h2 {
@@ -136,15 +157,61 @@ article {
 
 /* ---------- Images ---------- */
 
-img {
+img { /* made image border smaller and rounder */
   max-width: 80%;
   height: auto;
   display: block;
   margin: 24px auto; /* Centers the image horizontally */
-  border: 4px solid #d62f2f; /* Mars red accent border */
-  border-radius: 8px;
+  border: 2px solid #d62f2f; /* Mars red accent border */
+  border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
+
+/* ---------- Table Styles ---------- */
+
+.rover-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 32px;
+}
+
+.rover-table caption {
+  font-size: 24px;
+  color: #d62f2f; /* Mars Red Accent */
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.rover-table th,
+.rover-table td {
+  padding: 12px;
+  text-align: center;
+  border: 4px solid #000000;
+}
+
+.rover-table th {
+  background-color: #101820; /* Dark Background for Headers */
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.rover-table td {
+ /* Slightly darker background for table cells */
+  font-size: 16px;
+}
+.rover-table tr:nth-child(even) {
+  background-color: #7a3b3b; /* Earthy red (Mars Dust) */
+}
+
+.rover-table tr:nth-child(odd) {
+  background-color: #5c1e1e; /* Darker red-brown (Martian Terrain) */
+}
+
+.rover-table tr:hover {
+  background-color: #d62f2f;
+}
+
+
 
 
 /* ---------- Footer ---------- */
