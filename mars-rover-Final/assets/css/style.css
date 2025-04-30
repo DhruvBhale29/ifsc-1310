@@ -94,6 +94,7 @@ a {
   color: #d62f2f;
   text-decoration: none;
   font-weight: bold;
+  cursor: pointer;
 }
 
 a:hover,
