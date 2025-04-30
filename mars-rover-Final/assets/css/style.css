@@ -198,7 +198,6 @@ img { /* made image border smaller and rounder */
 }
 
 .rover-table td {
- /* Slightly darker background for table cells */
   font-size: 16px;
 }
 .rover-table tr:nth-child(even) {
