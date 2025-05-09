@@ -1,0 +1,78 @@
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  background-color: #0b0c10;
+  background-image: url(../img/background3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {background-image: url('../img/mars11.png'); 
+  background-size: cover;                    
+  background-position: center;               
+  background-repeat: no-repeat;              
+  padding: 160px 32px 80px 32px; 
+  text-align: center;
+  border: 2px solid #000000;
+}
+
+header h1 {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.tagline {
+  font-size: 16px;
+  color: #d1d1d1;
+  margin-top: 8px;
+}
+
+main {
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 1px 16px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+section {
+  margin-bottom: 35px;
+}
+
+h2 {
+  font-size: 28px;
+  border-left: 4px solid #d62f2f;
+  padding-left: 8px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+a {
+  color: #d62f2f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+footer {
+  background-color: rgba(16, 24, 32, 0.9);
+  text-align: center;
+  padding: 16px;
+  margin-top: 32px;
+  font-size: 14px;
+  color: #aaaaaa;
+}
